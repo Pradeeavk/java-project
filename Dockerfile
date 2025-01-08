@@ -8,7 +8,7 @@ WORKDIR /app
 COPY pom.xml /app
 
 # Copy the pre-built JAR file into the container
-COPY ./target/myapp.jar /app/myapp.jar
+COPY ./target/myapp-1.0-SNAPSHOT.jar /app/myapp.jar
 
 # Expose the port the app will run on (typically 8080 for Java apps)
 EXPOSE 8080
